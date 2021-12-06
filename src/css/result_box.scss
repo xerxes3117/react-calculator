@@ -1,0 +1,17 @@
+.result-box-container {
+  flex: 3 1 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 15px;
+  box-sizing: border-box;
+  font: normal 600 22px/24px inherit;
+
+  .result {
+    font-size: 24px;
+    &.error {
+      color: red;
+    }
+  }
+}
