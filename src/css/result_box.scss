@@ -19,3 +19,10 @@
     }
   }
 }
+
+@media only screen and (max-width: 376px) {
+  .result-box-container {
+    flex: 1 1 100px;
+    padding: 35px 15px;
+  }
+}

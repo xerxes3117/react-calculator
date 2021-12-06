@@ -14,7 +14,7 @@ function UserInputContainer({clickedOnCalculator}) {
             <li 
               onClick={() => clickedOnCalculator(val, 'other')}
               key={val}
-            >{val === 'Del' ? <FaBackspace style={{color: '#303030', fontSize: '24px'}}/> : val}</li>
+            >{val === 'Del' ? <FaBackspace style={{color: '#303030'}}/> : val}</li>
           ))}
         </ul>
         <ul className="operands">
