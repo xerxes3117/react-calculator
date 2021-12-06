@@ -1,4 +1,6 @@
 import React from 'react'
+
+import {FaBackspace} from 'react-icons/fa'
 import { nonNumberOperands, numberOperands, operators, otherOperations } from '../utils/constants'
 
 function UserInputContainer({clickedOnCalculator}) {
@@ -12,7 +14,7 @@ function UserInputContainer({clickedOnCalculator}) {
             <li 
               onClick={() => clickedOnCalculator(val, 'other')}
               key={val}
-            >{val}</li>
+            >{val === 'Del' ? <FaBackspace style={{color: '#303030', fontSize: '24px'}}/> : val}</li>
           ))}
         </ul>
         <ul className="operands">

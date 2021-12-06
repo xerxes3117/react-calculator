@@ -93,9 +93,8 @@ function Calculator() {
   const sanitizeExpression = () => {
     let tempExp = currExpression.split('')
     let isAfterDecimalOrNumber = false;
-    let nonZeroOperands = [...numberOperands.filter(d => d != '0'), '.']
+    let nonZeroOperands = [...numberOperands.filter(d => d !== '0'), '.']
 
-    debugger
     //Replace leading zero values to avoid being identified as octal values
     for(let i = 0; i < tempExp.length -1; i++) {
       if(i > 0 && nonZeroOperands.includes(tempExp[i])) {
@@ -107,7 +106,6 @@ function Calculator() {
         tempExp.splice(i, 1)
       }
     }
-    debugger
 
     return tempExp.join('')
   }
