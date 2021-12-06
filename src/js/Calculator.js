@@ -91,13 +91,11 @@ function Calculator() {
    * Remove any unecessary digits/symbols from the expression
    */
   const sanitizeExpression = () => {
-    debugger
     let tempExp = currExpression.split('')
     let isAfterDecimalOrNumber = false;
 
     //Replace leading zero values to avoid being identified as octal values
     for(let i = 0; i < tempExp.length -1; i++) {
-      debugger;
       if(i > 0 && [...numberOperands, '.'].includes(tempExp[i])) {
         isAfterDecimalOrNumber = true
       } else {

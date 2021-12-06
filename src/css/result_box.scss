@@ -6,10 +6,10 @@
   justify-content: space-between;
   padding: 15px;
   box-sizing: border-box;
-  font: normal 600 22px/24px inherit;
+  font: normal 600 20px/22px auto;
 
   .result {
-    font-size: 24px;
+    font: normal 600 30px/32px auto;
     &.error {
       color: red;
     }
