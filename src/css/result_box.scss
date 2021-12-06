@@ -6,12 +6,16 @@
   justify-content: space-between;
   padding: 15px;
   box-sizing: border-box;
-  font: normal 600 20px/22px auto;
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 600;
 
   .result {
-    font: normal 600 30px/32px auto;
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 600;
     &.error {
-      color: red;
+      color: #ff5858;
     }
   }
 }
